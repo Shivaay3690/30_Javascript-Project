@@ -20,7 +20,7 @@ btn.addEventListener('click', function (e) {
         flg = true
     } else {
         strng.textContent = 'Strangers'
-        strng.style.color = 'green'
+        strng.style.color = 'red'
         btn.textContent = 'Add Friend'
         btn.style.backgroundColor = 'red'
         btn.style.color = 'white'
