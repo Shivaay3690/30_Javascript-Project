@@ -2,10 +2,16 @@ const box = document.querySelector('#box');
 const box1 = document.querySelector('#box1');
 
 const colorMaker = () => {
-    let red = Math.floor(Math.random() * 100);
-    let green = Math.floor(Math.random() * 100);
-    let blue = Math.floor(Math.random() * 100);
-    return `rgb(${red},${green},${blue})`;
+    let hex = '0123456789ABCDEF'
+    let color = '#'
+    for(let i=0;i<6;i++){
+        color+= hex[Math.floor(Math.random()*16)]
+    }
+    return color
+    // let red = Math.floor(Math.random() * 100);
+    // let green = Math.floor(Math.random() * 100);
+    // let blue = Math.floor(Math.random() * 100);
+    // return `rgb(${red},${green},${blue})`;
 }
 
 let angle = 0;
@@ -21,8 +27,8 @@ const antiClockwise = () => {
 }
 
 setInterval(() => {
-    clockwise();
-    antiClockwise();    
+      clockwise();
+      antiClockwise();    
 
     box.style.backgroundColor = colorMaker();
     document.querySelector('body').style.backgroundColor = colorMaker();
