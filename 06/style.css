@@ -23,19 +23,19 @@ body{
 }
 
 .elem{
-    height: 160px;
+    height: 100px;
     width: 100%;
     border-bottom: 2px solid #fff;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative;
+    
 }
 
 .elem h1{
     font-size: 6vw;
-    /* position: relative; */
-    /* z-index: 7; */
+    position: relative;  
+     z-index:  7 ;
     mix-blend-mode: difference;
 }
 .elem img{
@@ -47,5 +47,5 @@ body{
     position: absolute;
     /* transform: translate(-50%,-50%); */
     opacity: 0;
-    transition: all linear 0.2s;
+    transition: all linear 0.1s;
 }
