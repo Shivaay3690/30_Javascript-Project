@@ -1,6 +1,3 @@
-<<<<<<< HEAD
- 
-=======
 const ApiKey = "e49257a966eaf88f16333763f24836bd"
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q="
 
@@ -50,4 +47,4 @@ async function checkweather(city) {
 searchBtn.addEventListener('click', function () {
     checkweather(searchBox.value);
 })
->>>>>>> 86c698b (updated files)
+
