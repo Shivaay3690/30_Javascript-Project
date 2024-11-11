@@ -35,7 +35,7 @@ body{
 .elem h1{
     font-size: 6vw;
     position: relative;  
-     z-index:  7 ;
+     z-index:  5 ;
     mix-blend-mode: difference;
 }
 .elem img{
