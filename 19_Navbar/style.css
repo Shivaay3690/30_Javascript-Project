@@ -1,0 +1,122 @@
+body{
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 3px 3px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav-container{
+    margin-bottom: 5px;
+
+}
+h2{
+    margin-bottom: 5px;
+}
+
+.nav1{
+    background-color: #e7e8ea;
+    padding: 8px;
+    
+}
+.nav1 ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav1 li{
+    display: inline;
+}
+.nav1 a{
+    text-decoration: none;
+    color: #202020;
+    /* background-color: rgb(245, 186, 69); */
+    padding: 5px 15px;
+    position: relative;
+}
+.nav1 .login-btn{
+    background-color: rgba(56, 56, 247, 0.871);
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #ffff;
+    cursor: pointer;
+}
+.nav1 a::after{
+    content: "Shivam";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #4267ec;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+.nav1 a:hover::after{
+    transform: scale(1);
+}
+
+.nav2{
+   background-color: rgb(37, 104, 37);
+    width: 200px;
+    padding: 20px;
+
+}
+.nav2 ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav2 li{
+    margin-bottom: 10px;
+}
+.nav2 a{
+    text-decoration: none;
+    color: #ffff;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+.nav2 a:hover{
+    background-color: rgb(89, 227, 89);
+}
+.nav2 .login-btn{
+    background-color: rgb(100, 228, 100);
+    color: #ffff;
+    border: none;
+    width: 100%;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.nav2 .login-btn:hover{
+    background-color: #073e09;
+    border: 1px solid white;
+}
+
+.nav3{
+    background-color: #47b3c4;
+    padding: 5px;
+}
+.nav3 ul{
+ list-style-type: none;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.nav3 a{
+    text-decoration: none;
+    padding: 3px;
+    color: #ffff;
+    display: block;
+}
+.nav3 .dropdown-content{
+    display: none;
+}
+.nav3 .dropdown:hover .dropdown-content{
+    display: block;
+    position: absolute;
+    background-color: #3e3e3e;
+    min-width: 150px;
+}
